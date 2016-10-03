@@ -25,6 +25,9 @@ public class Customer {
     @Persistent
     private Date date;
     
+    @Persistent
+    private Date lastModifieddate;
+    
   //getter and setter methods
 
 	public Key getKey() {
@@ -57,6 +60,13 @@ public class Customer {
 
 	public void setDate(Date date) {
 		this.date = date;
+	}
+	public Date getlastModifieddate() {
+		return lastModifieddate;
+	}
+
+	public void setlastModifieddate(Date lastModifieddate) {
+		this.lastModifieddate = lastModifieddate;
 	}
 
     
